@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinaria APP</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section>
+      <form id="formulario">
+        <div>
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" />
+        </div>
+        <div>
+          <label for="procedimiento">Procedimiento:</label>
+          <input type="text" id="procedimiento" />
+        </div>
+        <div id="radio">
+          <label
+            ><input
+              type="radio"
+              name="prioridad"
+              id="prioridad"
+              value="bajaPrioridad"
+              checked
+            />Baja Prioridad</label
+          >
+          <label>
+            <input
+              type="radio"
+              name="prioridad"
+              id="prioridad"
+              value="altaPrioridad"
+            />
+            Alta Prioridad
+          </label>
+        </div>
+        <div>
+          <label for="fecha">fecha</label>
+          <input id="fecha" type="datetime-local" />
+        </div>
+        <div>
+          <label for="observaciones">Observaciones:</label>
+          <textarea type="" id="observaciones"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="button">
+            <p class="text">Enviar</p>
+          </button>
+        </div>
+      </form>
+    </section>
+    <hr />
+    <section class="contenedor"></section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
